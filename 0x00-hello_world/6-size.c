@@ -9,8 +9,8 @@ int main(void)
 	float myfloat;
 	char mychar;
 
-	printf("lu\n", sizeof(mychar));
-	printf("lu\n", sizeof(myfloat));
-	printf("lu\n", sizeof(mynum));
+	printf("%lu\n", sizeof(mychar));
+	printf("%lu\n", sizeof(myfloat));
+	printf("%lu\n", sizeof(mynum));
 	return (0);
 }
