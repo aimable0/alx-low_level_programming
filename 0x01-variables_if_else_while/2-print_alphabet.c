@@ -5,8 +5,14 @@
  */
 int main(void)
 {
-	for (char c = 'a'; c <= 'z'; c++)
-	putchar(c);
+	char str[] = "abcdefghijklmnopqrstuvwxyz";
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		putchar(str[i]);
+		i++;
+	}
 
 	return (0);
 
