@@ -1,19 +1,17 @@
 #include <stdio.h>
+#include <string.h>
 /**
- *main - a program that prints the alphabet in lower case
- *Return: 0 always (success)
+ *main - printing alphabets
+ *Return: 0 (success)
  */
 int main(void)
 {
-	char str[] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
+char alph[] = "abcdefghijklmnopqrstuvwxyz\n";
+int i = 0;
 
-	while (str[i] != '\0')
-	{
-		putchar(str[i]);
-		i++;
-	}
+for (i = 0; i < 26; i++)
+putchar(alph[i]);
 
-	return (0);
+return (0);
 
 }
