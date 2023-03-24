@@ -1,6 +1,6 @@
 #include "main.h"
- /**
- *_isupper - checks for uppercase letters
+/**
+ * _isupper - checks for uppercase letters
  *@c: any character
  *Return:0 success
  */
