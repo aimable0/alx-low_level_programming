@@ -1,19 +1,16 @@
 #include "main.h"
-/**
- *  *_isalpha - check for letters
- *   *@c: represents any asci character
- *    *Return: 0 (success)
- *     */
-int _isalpha(int c)
-{
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
 
+/**
+ * _isupper - checks for uppercase character
+ * @c: the character to check
+ *
+ * Return: 1 if c is uppercase, 0 otherwise
+ */
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+	{
+	return (1);
+	}
+	return (0);
 }
