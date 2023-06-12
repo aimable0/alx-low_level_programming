@@ -1,0 +1,287 @@
+!<arch>
+_abs.c/         0           0     0     644     129       `
+#include "main.h"
+/**
+ * _abs - used for certain things
+ * Return: int on success.
+ *@n: intiger number.
+ */
+int _abs(int n)
+{
+}
+
+_atoi.c/        0           0     0     644     683       `
+#include <stdio.h>
+#include "main.h"
+/**
+ * _atoi - converts an array into intigers
+ * @s: array of type char
+ * Return: int on success.
+ */
+
+int _atoi(char *s)
+{
+	int result = 0, sign = 1, i, len = 0;
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	for (i = 0; i <= len; i++)
+	{
+		if (s[i] >= '0' && s[i] <= '9')
+		break;
+	}
+	if (s[i - 1] == '-')
+	{
+		sign = -1;
+	}
+	else if (s[len - 1] == '+')
+	{
+		sign = 1;
+	}
+	else
+	{
+		sign = 1;
+	}
+	while (s[i] >= '0' && s[i] <= '9')
+	{
+	if (result > (2147483647 - (s[i] - '0')) / 10)
+	{
+	if (sign == 1)
+		return (2147483647);
+	else if (sign == -1)
+		return (-2147483648);
+	}
+	result = result * 10 + (s[i] - '0');
+	i++;
+	}
+	return (result * sign);
+}
+
+_isalpha.c/     0           0     0     644     144       `
+#include "main.h"
+
+/**
+ *_isalpha - writes if a character is a an alphabet.
+ *@c: any int
+ *Return: int on success.
+ */
+int _isalpha(int c)
+{
+}
+_isdigit.c/     0           0     0     644     0         `
+_islower.c/     0           0     0     644     144       `
+#include "main.h"
+/**
+ * _islower - check if the alphabet is lower
+ * Return: int on success.
+ *@c: intiger number.
+ */
+int _islower(int c)
+{
+}
+_isupper.c/     0           0     0     644     124       `
+#include "main.h"
+/**
+ * _isupper - checks for upper case.
+ *@c: intiger
+ * Return: on success.
+ */
+int _isupper(int c)
+{
+}
+_memcpy.c/      0           0     0     644     219       `
+#include "main.h"
+/**
+ * _memcpy - function
+ *@dest: a character pointer
+ *@src: a character pointer
+ *@n: an intiger.
+ * Return: char to pointer on success.
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+}
+
+_memset.c/      0           0     0     644     188       `
+#include "main.h"
+/**
+ * _memset - a c function
+ *@s: character
+ *@b: character
+ *@n: intiger
+ * Return: char to pointer on success.
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+}
+_putchar.c/     0           0     0     644     265       `
+#include <unistd.h>
+#include "main.h"
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+_puts.c/        0           0     0     644     182       `
+#include "main.h"
+/**
+ *_puts - prints a string
+ *@str: any string pointer
+ *Return: void
+ */
+void _puts(char *str)
+{
+	while (*str)
+	{
+	_putchar(*str);
+	str++;
+	}
+	_putchar('\n');
+}
+_strcat.c/      0           0     0     644     169       `
+#include "main.h"
+/**
+ * _strcat - a c function
+ *@dest: character
+ *@src: character
+ * Return: char to pointer on success.
+ */
+char *_strcat(char *dest, char *src)
+{
+}
+
+_strchr.c/      0           0     0     644     161       `
+#include "main.h"
+/**
+ * _strchr: a c function
+ *@s: a character
+ *@c: a character
+ * Return: char to pointer on success.
+ */
+char *_strchr(char *s, char c)
+{
+}
+
+_strcmp.c/      0           0     0     644     173       `
+#include "main.h"
+/**
+ * _strcmp - a c function
+ *@s1: a pointer character
+ *@s2: a pointer character
+ * Return: char to on success.
+ */
+int _strcmp(char *s1, char *s2)
+{
+}
+
+_strcpy.c/      0           0     0     644     187       `
+#include "main.h"
+/**
+ * _strcpy - a function that copies a string
+ * @src: the source
+ * @dest: the destination
+ * Return: the copied string
+ */
+char *_strcpy(char *dest, char *src)
+{
+}
+
+_strlen.c/      0           0     0     644     184       `
+#include "main.h"
+/**
+ * _strlen - a c function that measure lengths
+ *@s: the string to be measured of its length
+ * Return: the length of string in int.
+ */
+int _strlen(char *s)
+{
+}
+_strncat.c/     0           0     0     644     191       `
+#include "main.h"
+/**
+ * _strncat - a c function
+ *@src: the source
+ *@dest: the destination
+ *@n: number of times
+ * Return: a character
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+}
+
+_strncpy.c/     0           0     0     644     251       `
+#include "main.h"
+ /**
+  * _strrncpy - copy a string in c language.
+  *@dest: destination character arr
+  *@src: source character arr
+  *@n: times in intiger
+  *Return: char to pointer on success.
+  */
+char *_strncpy(char *dest, char *src, int n)
+{
+}
+
+_strpbrk.c/     0           0     0     644     162       `
+#include "main.h"
+/**
+ * _strpbrk - a c function
+ *@s: the source
+ *@accept: the destination
+ * Return: a character
+ */
+char *_strpbrk(char *s, char *accept)
+{
+}
+_strspn.c/      0           0     0     644     183       `
+#include "main.h"
+/**
+ * _strspn - a c function
+ *@s: the character input
+ *@accept: the character input
+ *Return: un assgine int.
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+}
+
+_strstr.c/      0           0     0     644     187       `
+#include "main.h"
+/**
+ * _strstr - a c function
+ *@haystack: the character input
+ *@needle: the character input
+ * Return: a character
+ */
+char *_strstr(char *haystack, char *needle)
+{
+}
+
+isdigit.c/      0           0     0     644     140       `
+#include "main.h"
+/**
+ *_isdigit - checks if the number is digit
+ *@c: intiger number.
+ * Return: int on sucess
+ */
+int _isdigit(int c)
+{
+}
+main.c/         0           0     0     644     142       `
+#include "main.h"
+
+int main(void)
+{
+	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+	return (0);
+}
