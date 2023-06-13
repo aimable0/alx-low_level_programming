@@ -12,6 +12,9 @@ char *str_concat(char *s1, char *s2)
 	int i, len1 = 0, len2 = 0, totlen;
 	char *s;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
+
 	while (s1[len1] != '\0')
 		len1++;
 
@@ -20,7 +23,10 @@ char *str_concat(char *s1, char *s2)
 
 	totlen = len1 + len2;
 
-	s = malloc(totlen);
+	s = malloc(totlen + 1);
+
+	if (s == NULL)
+		return (NULL);
 
 	for (i = 0; i < len1; i++)
 
