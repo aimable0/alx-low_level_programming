@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - the main function
  * @argc: the arg count
@@ -15,14 +16,16 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
+	
 	else if (argc > 2)
 	{
+	
 		for (i = 0; i < argc; i++)
 		{
 		result += atoi(argv[i]);
 		}
-		printf("%d\n", result);
 	}
+	printf("%d\n", result);
 
 	return (0);
 
