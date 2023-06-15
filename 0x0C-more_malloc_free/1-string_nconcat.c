@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 /**
  * string_nconcat - a funtion that concatenate strings.
@@ -11,8 +12,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int len1 = 0, len2 = 0;
-	unsigned int m, n;
-	char *text;
+	unsigned int i, j;
+	char *concat;
 
 	if (s1 != NULL)
         len1 = strlen(s1);
@@ -41,5 +42,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
     concat[i] = '\0';
 
-    return concat;s
+    return concat;
 }
