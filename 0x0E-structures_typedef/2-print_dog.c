@@ -24,9 +24,9 @@ void print_dog(struct dog *d)
 
 	while (d != NULL)
 	{
-	printf("Name: %s\n", d->name = strdup((*d).name));
+	printf("Name: %s\n", d->name);
 	printf("Age: %f\n", d->age);
-	printf("Owner: %s\n", d->owner = strdup((*d).owner));
+	printf("Owner: %s\n", d->owner);
 	break;
 	}
 
