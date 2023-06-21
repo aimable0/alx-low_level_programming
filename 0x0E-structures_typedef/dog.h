@@ -9,13 +9,14 @@
  *
  *how it works: it contains the classified info of the given user
  */
-typedef struct
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 }dog_t;
 
-/*void init_dog(struct dog *d, char *name, float age, char *owner);*/
-/*void print_dog(struct dog *d);*/
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+
 #endif
