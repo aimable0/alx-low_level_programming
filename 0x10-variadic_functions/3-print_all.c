@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *print_all - prints all
- *@const_format: xyz
+ *@format: xyz
  *@...:more others
  *Return: void
  */
@@ -14,11 +14,9 @@ void print_all(const char * const format, ...)
 	char ch_f;
 
 	va_start(args, format);
-
 	while (format && format[i])
 	{
 	ch_f = format[i];
-
 	if (i > 0)
 	printf(", ");
 
@@ -43,12 +41,9 @@ void print_all(const char * const format, ...)
 		i++;
 		continue;
 	}
-
 		i++;
 	}
-
 	va_end(args);
-
 	printf("\n");
 }
 
